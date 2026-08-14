@@ -1,0 +1,41 @@
+# ─── Secrets & environment ───────────────────────────────
+# NEVER commit real credentials (Plaid keys, DB passwords, etc.)
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+
+# Database 
+# Local DB dumps / backups can be large and may contain real data
+*.sql.gz
+*.dump
+*.bak
+/db/backups/
+# Keep migrations and seeds tracked (they're source), so DON'T ignore /db/migrations or /db/seeds
+
+# Node (backend/frontend, if used)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+dist/
+build/
+.next/
+coverage/
+
+# Python (backend, if used)
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+
+# OS / editor 
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
