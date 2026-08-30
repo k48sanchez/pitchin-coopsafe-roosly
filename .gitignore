@@ -6,13 +6,12 @@
 *.pem
 *.key
 
-# Database 
+# Database
 # Local DB dumps / backups can be large and may contain real data
 *.sql.gz
 *.dump
 *.bak
-/db/backups/
-# Keep migrations and seeds tracked (they're source), so DON'T ignore /db/migrations or /db/seeds
+/database/backups/
 
 # Node (backend/frontend, if used)
 node_modules/
@@ -39,3 +38,7 @@ Thumbs.db
 .idea/
 .vscode/
 *.swp
+
+# ─── Supabase ────────────────────────────────────────────
+supabase/.temp/
+supabase/.branches/
